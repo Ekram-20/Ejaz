@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>إيجاز</title>
+</head>
+
+<body>
+    <!-- <header>
+        <img src="{{ url_for('static', filename='images/ejaz.png') }}" alt="ejaz logo" width="10%">
+    </header> -->
+
+    <main>
+        <center>
+            <h1>زُبدة التسجيل</h1>
+            <p>هنا، يمكنك بسهولة رفع التسجيل الصوتي الخاص بك والاستفادة من قوة الذكاء الاصطناعي لسماع تلخيصه</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <div class="input-types">
+
+                    <input type="url" id="url" name="url" placeholder="رابط يوتيوب" class="url-input">
+                    <p>أو</p>
+
+                    <input type="file" id="soundFile" name="soundFile" accept="audio/*" class="sound-file">
+
+                </div>
+
+                <button type="submit">بدء</button>
+            </form>
+
+
+
+
+
+        </center>
+    </main>
+
+
+    <section class="results">
+        <h4 class="subtitle">استمع للتلخيص </h4>
+        <audio src="{{ url_for('static', filename='record.wav') }}"></audio>
+        <h4 class="subtitle">اقرأ التلخيص</h4>
+        <div class="sum-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ipsum incidunt culpa, porro ratione autem
+            sapiente veniam deleniti, explicabo minus labore! Corrupti, iste enim dolore sequi ab iure vero accusamus!
+        </div>
+    </section>
+
+    <center>
+        <img src="{{ url_for('static', filename='images/design.svg') }}" width="70%">
+    </center>
+
+    
+    <footer>
+        2024 &copy; إعداد فريق الذكاء الاصطناعي
+    </footer>
+</body>
+
+</html>
